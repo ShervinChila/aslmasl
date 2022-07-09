@@ -17,7 +17,7 @@ async def batch(client: Client, message: Message):
         if f_msg_id:
             break
         else:
-            await first_message.reply("نظر مثبتت نظر منفیم شد😂\n\nاز چنل <a href='https://t.me/decoupagechannel/'>دکـوپـاژ</a> برام بفرست موش", quote = True)
+            await first_message.reply("نظر مثبتت نظر منفیم شد😂\n\nگفتم از چنل <a href='https://t.me/decoupagechannel/'>دکـوپـاژ</a> موش", quote = True)
             continue
 
     while True:
@@ -29,7 +29,7 @@ async def batch(client: Client, message: Message):
         if s_msg_id:
             break
         else:
-            await second_message.reply("نظر مثبتت نظر منفیم شد😂\n\nاز چنل <a href='https://t.me/decoupagechannel/'>دکـوپـاژ</a> برام بفرست موش", quote = True)
+            await second_message.reply("د نه د😂\n\nاین یکی فایل رو هم از همون <a href='https://t.me/decoupagechannel/'>چــنل</a> باید بفرستی خرگوشک", quote = True)
             continue
 
 
@@ -44,7 +44,7 @@ async def batch(client: Client, message: Message):
 async def link_generator(client: Client, message: Message):
     while True:
         try:
-            channel_message = await client.ask(text = "لینک نظر مثبتته؟☺️\n\nاوکی فایل مورد نظرتو از چنل <a href='https://t.me/decoupagechannel/'>دکـوپـاژ</a> برام بفرست", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
+            channel_message = await client.ask(text = "لینک موخوای؟☺️\n\nاوکی فایل مورد نظرتو از چنل <a href='https://t.me/decoupagechannel/'>دکـوپـاژ</a> برام بفرست", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
         except:
             return
         msg_id = await get_message_id(client, channel_message)
