@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>🧛 سازنده : <a href='https://t.me/crowdshot/'>شـروین</a>\n🤖 مای نیم ایز : <a href='https://t.me/indiancnemabot/'>ربات کوچولو</a>\n🏠 خونه زندگیم : <a href='https://t.me/indiancnema/'>چنل سینمای هند </a>\n👧🏻 حرف و حدیثی با ما : <a href='https://t.me/kobiii1997/'>ادمین </a>\n🌏 وبسایت ما : در حال ساخت </b>",
+            text = f"<b>🧛 سازنده : <a href='https://t.me/crowdshot/'>شـروین</a>\n🤖 مای نیم ایز : <a href='https://t.me/indiancnemabot/'>ربات دریافت</a>\n🏠 خونه زندگیم : <a href='https://t.me/indiancnema/'>چنل سینمای هند </a>\n👧🏻 حرف و حدیثی با ما : <a href='https://t.me/kobiii1997/'>ادمین </a>\n🌏 وبسایت ما : در حال ساخت </b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
